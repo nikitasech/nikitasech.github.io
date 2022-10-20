@@ -1,0 +1,31 @@
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.container {
+  padding-right: calc((100% - 1220px) / 2);
+  padding-left: calc((100% - 1220px) / 2);
+
+  @include vp-1280 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @include vp-768 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
