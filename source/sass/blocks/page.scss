@@ -1,0 +1,13 @@
+.page {
+  &.is-dark-theme {
+    color: $color-alabaster;
+
+    background-color: $color-black-russian;
+  }
+
+  &.is-light-theme {
+    color: $color-bright-grey;
+
+    background-color: $color-sugar-cane;
+  }
+}

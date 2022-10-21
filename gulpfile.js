@@ -54,7 +54,7 @@ const sprite = () => {
 };
 
 const img = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg,webp}')
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 5}),
       imagemin.mozjpeg({progressive: true})
