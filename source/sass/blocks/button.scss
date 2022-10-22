@@ -1,0 +1,47 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-alabaster;
+  letter-spacing: -0.03em;
+
+  background-color: $color-bright-grey;
+  border-radius: 20px;
+
+  &--icon {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  @include vp-768 {
+    padding-right: 67px;
+    padding-left: 67px;
+
+    &--icon {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.button__icon {
+  width: 30px;
+  height: 30px;
+}
+
+.button__arrow {
+  margin-left: 10px;
+  width: 8px;
+  height: 14px;
+}

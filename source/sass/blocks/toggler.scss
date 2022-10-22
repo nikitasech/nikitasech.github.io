@@ -1,0 +1,28 @@
+.toggler {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggler__image {
+  width: 22px;
+  height: 22px;
+
+  @include vp-768 {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.toggler__image-icon {
+  display: none;
+
+  &.is-hidden {
+    display: block;
+  }
+}
