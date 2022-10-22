@@ -3,7 +3,7 @@
 
   @include vp-1280 {
     min-height: 506px;
-    padding-top: 65px;
+    padding-top: 25px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -78,7 +78,7 @@
   display: none;
 
   @include vp-1280 {
-    top: 40px;
+    top: 0;
 
     width: 500px;
     height: 506px;
@@ -147,6 +147,10 @@
 
   @include vp-768 {
     margin-bottom: 35px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 0;
   }
 }
 

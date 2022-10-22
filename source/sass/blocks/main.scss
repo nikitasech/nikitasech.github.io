@@ -1,0 +1,48 @@
+.main {
+  display: grid;
+  row-gap: 40px;
+
+  @include vp-1280 {
+    grid-template: "about about"
+    "technologies tools"
+    / 1fr 1fr;
+    row-gap: 70px;
+
+    column-gap: 54px;
+  }
+
+  @include vp-768 {
+    grid-template: "about about"
+    "technologies tools"
+    / 1fr 1fr;
+    row-gap: 60px;
+
+    column-gap: 35px;
+  }
+}
+
+.main__about {
+  @include vp-768 {
+    grid-area: about;
+  }
+}
+
+.main__technologies {
+  @include vp-768 {
+    grid-area: technologies;
+  }
+}
+
+.main__tools {
+  @include vp-768 {
+    grid-area: tools;
+  }
+}
+
+.main__title {
+  margin-bottom: 25px;
+
+  @include vp-768 {
+    margin-bottom: 35px;
+  }
+}

@@ -5,6 +5,10 @@
   justify-content: space-between;
   align-items: center;
   min-height: 90px;
+
+  @include vp-1280 {
+    margin-bottom: 40px;
+  }
 }
 
 .main-header__logo-wrapper {

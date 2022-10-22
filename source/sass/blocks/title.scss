@@ -1,0 +1,18 @@
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  text-align: center;
+  color: $color-vis-vis;
+  text-transform: uppercase;
+
+  @include vp-768 {
+    font-size: 37px;
+  }
+}
+
+// .is-light-theme .title {
+//   color: $color-jordy-blue;
+// }
