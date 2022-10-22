@@ -1,0 +1,39 @@
+.main {
+  display: grid;
+  grid-template:
+    'about about'
+    'technologies tools';
+    column-gap: 35px;
+}
+
+.main__about {
+  grid-area: about;
+}
+
+.main__technologies {
+  grid-area: technologies;
+}
+
+.main__tools {
+  grid-area: tools;
+}
+
+.main__title {
+  margin-bottom: 25px;
+
+  @include vp-768 {
+    margin-bottom: 35px;
+  }
+}
+
+.main__section {
+  margin-bottom: 40px;
+
+  @include vp-768 {
+    margin-bottom: 60px;
+  }
+
+  @include vp-1280 {
+    margin-bottom: 70px;
+  }
+}

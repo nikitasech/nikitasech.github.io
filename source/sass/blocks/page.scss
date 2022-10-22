@@ -11,23 +11,3 @@
     background-color: $color-sugar-cane;
   }
 }
-
-.page__title {
-  margin-bottom: 25px;
-
-  @include vp-768 {
-    margin-bottom: 35px;
-  }
-}
-
-.page__section {
-  margin-bottom: 40px;
-
-  @include vp-768 {
-    margin-bottom: 60px;
-  }
-
-  @include vp-1280 {
-    margin-bottom: 70px;
-  }
-}
