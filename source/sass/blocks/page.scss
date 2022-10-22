@@ -11,3 +11,15 @@
     background-color: $color-sugar-cane;
   }
 }
+
+.page__about {
+  margin-bottom: 40px;
+
+  @include vp-768 {
+    margin-bottom: 60px;
+  }
+
+  @include vp-1280 {
+    margin-bottom: 70px;
+  }
+}
