@@ -1,0 +1,15 @@
+.technologies__title {
+  margin-bottom: 25px;
+}
+
+.technologies__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  column-gap: 14px;
+  row-gap: 14px;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
