@@ -1,35 +1,42 @@
 .main {
   display: grid;
-
-  @include vp-768 {
-    grid-template:
-      "about about"
-      "technologies tools"
-      / 1fr 1fr;
-
-    column-gap: 35px;
-  }
+  row-gap: 40px;
 
   @include vp-1280 {
-    grid-template:
-      "about about"
-      "technologies tools"
-      / 1fr 1fr;
+    grid-template: "about about"
+    "technologies tools"
+    / 1fr 1fr;
+    row-gap: 70px;
 
     column-gap: 54px;
+  }
+
+  @include vp-768 {
+    grid-template: "about about"
+    "technologies tools"
+    / 1fr 1fr;
+    row-gap: 60px;
+
+    column-gap: 35px;
   }
 }
 
 .main__about {
-  grid-area: about;
+  @include vp-768 {
+    grid-area: about;
+  }
 }
 
 .main__technologies {
-  grid-area: technologies;
+  @include vp-768 {
+    grid-area: technologies;
+  }
 }
 
 .main__tools {
-  grid-area: tools;
+  @include vp-768 {
+    grid-area: tools;
+  }
 }
 
 .main__title {
@@ -37,17 +44,5 @@
 
   @include vp-768 {
     margin-bottom: 35px;
-  }
-}
-
-.main__section {
-  margin-bottom: 40px;
-
-  @include vp-1280 {
-    margin-bottom: 70px;
-  }
-
-  @include vp-768 {
-    margin-bottom: 60px;
   }
 }
