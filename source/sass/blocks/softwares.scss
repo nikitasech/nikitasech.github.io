@@ -1,4 +1,16 @@
-.software {
+.softwares {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0;
+  column-gap: 14px;
+  row-gap: 14px;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+.softwares__element {
   display: flex;
   align-items: center;
   width: 100%;
@@ -21,24 +33,24 @@
   border-radius: 20px;
 }
 
-button.software {
+button.softwares__element {
   cursor: pointer;
 }
 
-.software__icon {
+.softwares__icon {
   flex-shrink: 0;
   width: 26px;
   margin-right: 5px;
 }
 
-.software__name {
+.softwares__name {
   flex-grow: 1;
   flex-shrink: 1;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.software__arrow {
+.softwares__arrow {
   flex-shrink: 0;
   width: 8px;
   height: 14px;
