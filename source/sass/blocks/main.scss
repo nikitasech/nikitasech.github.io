@@ -1,9 +1,23 @@
 .main {
   display: grid;
-  grid-template:
-    'about about'
-    'technologies tools';
-    column-gap: 35px;
+
+  @include vp-768 {
+    grid-template:
+      "about about"
+      "technologies tools"
+      / 1fr 1fr;
+
+    grid-gap: 35px;
+  }
+
+  @include vp-1280 {
+    grid-template:
+      "about about"
+      "technologies tools"
+      / 1fr 1fr;
+
+    column-gap: 54px;
+  }
 }
 
 .main__about {
@@ -29,11 +43,11 @@
 .main__section {
   margin-bottom: 40px;
 
-  @include vp-768 {
-    margin-bottom: 60px;
-  }
-
   @include vp-1280 {
     margin-bottom: 70px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 60px;
   }
 }

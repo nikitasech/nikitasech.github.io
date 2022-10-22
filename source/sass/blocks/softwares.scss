@@ -1,16 +1,25 @@
 .softwares {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 0;
-  column-gap: 14px;
-  row-gap: 14px;
-  margin-bottom: 0;
-  padding-left: 0;
+  gap: 14px;
   max-width: 380px;
-  margin-left: auto;
+  margin-top: 0;
   margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding-left: 0;
 
   list-style: none;
+
+  @include vp-1280 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 481px;
+  }
+
+  @include vp-768 {
+    gap: 19px;
+  }
 }
 
 .softwares__element {
