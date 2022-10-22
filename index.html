@@ -10,8 +10,81 @@
     <link href="fonts/centurygothic.woff2" rel="preload" as="font">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body>
+  <!-- Для светлой темы is-light-theme -->
+  <body class="page is-dark-theme container">
+    <header class="main-header">
+      <div class="main-header__logo-wrapper">
+        <a class="logo" href>
+          <svg class="logo__image" width="38" height="21">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <button class="main-header__toggler-theme toggler">
+        <span class="visually-hidden">Переключить на светлую тему</span>
+        <svg class="toggler__image" width="22" height="22">
+          <use class="toggler__image-icon is-hidden" xlink:href="img/sprite.svg#icon-sun"></use>
+          <use class="toggler__image-icon" xlink:href="img/sprite.svg#icon-luna"></use>
+        </svg>
+      </button>
+      <button class="main-header__toggler-menu toggler">
+        <span class="visually-hidden">Открыть меню</span>
+        <svg class="toggler__image" width="22" height="22">
+          <use class="toggler__image-icon is-hidden" xlink:href="img/sprite.svg#icon-open-menu"></use>
+          <use class="toggler__image-icon" xlink:href="img/sprite.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <!-- При открытом is-opened -->
+      <nav class="main-header__nav">
+        <ul class="main-header__nav-list">
+          <li class="main-header__nav-item">
+            <a class="main-header__nav-link" href>Технологии</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__nav-link" href>Инструменты</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__nav-link" href>Проекты</a>
+          </li>
+          <li class="main-header__nav-item">
+            <a class="main-header__nav-link" href>Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="about">
+        <h1 class="visually-hidden">Сайт-портфолио NikitaSech</h1>
+        <p class="about__title">Привет, меня зовут <span class="about__title-highlighting">Никита!</span></p>
+        <p class="about__subtitle">Я&nbsp;frontend разработчик.</p>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
+          <picture>
+            <source type="image/webp" srcset="img/about-dark-preview@1x.webp 1x, ./img/about-dark-preview@2x.webp 2x">
+            <img class="about__preview" src="img/about-dark-preview@1x.png" srcset="img/about-dark-preview@2x.png 2x" alt="Стоит молодой и красивый парень в черной одежде и смотрит в сторону" width="360" height="365">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/about-light-preview@1x.webp 1x, ./img/about-light-preview@2x.webp 2x">
+            <img class="about__preview is-hidden" src="img/about-light-preview@1x.png" srcset="img/about-light-preview@2x.png 2x" alt="Стоит молодой и красивый парень в черной одежде и смотрит в сторону" width="360" height="365">
+          </picture>
+        <ul class="about__buttons-list">
+          <li class="about__buttons-item">
+            <a class="button" href>Резюме</a>
+          </li>
+          <li class="about__buttons-item">
+            <a class="button button--icon" href="https://github.com/nikitasech">
+              <span class="visually-hidden">GitHub</span>
+              <svg class="button__icon" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-github"></use>
+              </svg>
+              <svg class="button__arrow" width="8" height="14">
+                <use xlink:href="img/sprite.svg#icon-arrow"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <script src="js/main.min.js"></script>
   </body>
