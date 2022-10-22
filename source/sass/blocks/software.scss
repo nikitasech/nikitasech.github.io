@@ -1,0 +1,45 @@
+.software {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  min-width: 140px;
+  max-width: 160px;
+  min-height: 60px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  color: $color-alabaster;
+
+  background-color: $color-bright-grey;
+  border: none;
+  border-radius: 20px;
+}
+
+button.software {
+  cursor: pointer;
+}
+
+.software__icon {
+  flex-shrink: 0;
+  width: 26px;
+  margin-right: 5px;
+}
+
+.software p {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.software__arrow {
+  flex-shrink: 0;
+  width: 8px;
+  height: 14px;
+}
