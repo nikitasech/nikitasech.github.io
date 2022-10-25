@@ -11,6 +11,7 @@
     grid-template: "about about"
       "technologies tools"
       "projects projects"
+      "contacts contacts"
       / 1fr 1fr;
     column-gap: 35px;
     row-gap: 60px;
@@ -38,6 +39,12 @@
 .main__projects {
   @include vp-768 {
     grid-area: projects;
+  }
+}
+
+.main__contacts {
+  @include vp-768 {
+    grid-area: contacts;
   }
 }
 
