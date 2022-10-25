@@ -1,13 +1,15 @@
 .page {
-  &.is-dark-theme {
-    color: $color-alabaster;
+  color: $color-alabaster;
 
-    background-color: $color-black-russian;
-  }
+  background-color: $color-black-russian;
+
+  fill: $color-alabaster;
 
   &.is-light-theme {
     color: $color-bright-grey;
 
     background-color: $color-sugar-cane;
+
+    fill: $color-bright-grey;
   }
 }

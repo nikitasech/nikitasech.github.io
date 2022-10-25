@@ -16,3 +16,7 @@
 .main-footer__link {
   color: $color-vis-vis;
 }
+
+.is-light-theme .main-footer__link {
+  color: $color-jordy-blue;
+}

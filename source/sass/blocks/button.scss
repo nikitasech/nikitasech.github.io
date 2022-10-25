@@ -35,10 +35,12 @@
     padding-bottom: 10px;
     padding-left: 12px;
   }
+}
 
-  &--color-black-russian {
-    background-color: $color-black-russian;
-  }
+.is-light-theme .button {
+  color: $color-bright-grey;
+
+  background-color: $color-pattens-blue;
 }
 
 .button__arrow {

@@ -44,6 +44,11 @@
   border-radius: 20px;
 }
 
+.is-light-theme .softwares__element {
+  background-color: $color-pattens-blue;
+  color: $color-bright-grey;
+}
+
 button.softwares__element {
   cursor: pointer;
 }
@@ -52,6 +57,7 @@ button.softwares__element {
   flex-shrink: 0;
   width: 26px;
   margin-right: 5px;
+
 }
 
 .softwares__name {

@@ -32,6 +32,10 @@
   border-radius: 20px;
 }
 
+.is-light-theme .projects__element {
+  background-color: $color-pattens-blue;
+}
+
 .projects__title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -48,6 +52,10 @@
 
   background-color: $color-black-russian;
   border-radius: 15px;
+}
+
+.is-light-theme .projects__preview {
+  background-color: $color-sugar-cane;
 }
 
 .projects__info {
@@ -69,4 +77,12 @@
   padding-left: 0;
 
   list-style: none;
+}
+
+.projects__button {
+  background-color: $color-black-russian;
+}
+
+.is-light-theme .projects__button {
+  background-color: $color-sugar-cane;
 }
