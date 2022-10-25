@@ -20,16 +20,16 @@
 @import "blocks/toggler";
 @import "blocks/button";
 @import "blocks/title";
-@import "blocks/softwares";
 
-// Средние блоки
-@import "blocks/projects";
-
-// Крупные блоки
+// Крупные блоки (или те, которые в теории могут содержать мелкие)
 @import "blocks/page";
 @import "blocks/main-header";
 @import "blocks/main";
 @import "blocks/about";
+@import "blocks/projects";
+@import "blocks/softwares";
+@import "blocks/contacts";
+@import "blocks/main-footer";
 
 // ---------------------------------
 
