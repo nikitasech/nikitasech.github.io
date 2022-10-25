@@ -3,9 +3,6 @@
   row-gap: 40px;
 
   @include vp-1280 {
-    grid-template: "about about"
-    "technologies tools"
-    / 1fr 1fr;
     row-gap: 70px;
 
     column-gap: 54px;
@@ -14,6 +11,7 @@
   @include vp-768 {
     grid-template: "about about"
     "technologies tools"
+    "projects projects"
     / 1fr 1fr;
     row-gap: 60px;
 
@@ -36,6 +34,12 @@
 .main__tools {
   @include vp-768 {
     grid-area: tools;
+  }
+}
+
+.main__projects {
+  @include vp-768 {
+    grid-area: projects;
   }
 }
 
