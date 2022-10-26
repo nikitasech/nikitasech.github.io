@@ -11,7 +11,7 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <!-- Для светлой темы is-light-theme -->
-  <body class="page is-light-theme container">
+  <body class="page container" data-page>
     <header class="main-header">
       <div class="main-header__logo-wrapper">
         <a class="logo" href="#">
@@ -20,12 +20,12 @@
           </svg>
         </a>
       </div>
-      <button class="main-header__toggler-theme toggler">
+      <button class="main-header__toggler-theme toggler" data-toggler data-theme-toggler>
         <!-- При светлой теме: "Переключить на темную тему" -->
-        <span class="visually-hidden">Переключить на светлую тему</span>
+        <span class="visually-hidden" data-toggler-text data-toggler-outher-text="Переключить на темную тему">Переключить на светлую тему</span>
         <svg class="toggler__image" width="22" height="22">
-          <use class="toggler__image-icon" xlink:href="img/sprite.svg#icon-sun"></use>
-          <use class="toggler__image-icon is-hidden" xlink:href="img/sprite.svg#icon-luna"></use>
+          <use class="toggler__image-icon" data-toggler-icon xlink:href="img/sprite.svg#icon-sun"></use>
+          <use class="toggler__image-icon is-hidden" data-toggler-icon xlink:href="img/sprite.svg#icon-luna"></use>
         </svg>
       </button>
       <button class="main-header__toggler-menu toggler">
