@@ -11,7 +11,7 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <!-- Для светлой темы is-light-theme -->
-  <body class="page is-dark-theme container">
+  <body class="page container" data-page>
     <header class="main-header">
       <div class="main-header__logo-wrapper">
         <a class="logo" href="#">
@@ -20,20 +20,20 @@
           </svg>
         </a>
       </div>
-      <button class="main-header__toggler-theme toggler">
+      <button class="main-header__toggler-theme toggler" data-toggler data-theme-toggler>
         <!-- При светлой теме: "Переключить на темную тему" -->
-        <span class="visually-hidden">Переключить на светлую тему</span>
+        <span class="visually-hidden" data-toggler-text data-toggler-outher-text="Переключить на темную тему">Переключить на светлую тему</span>
         <svg class="toggler__image" width="22" height="22">
-          <use class="toggler__image-icon is-hidden" xlink:href="img/sprite.svg#icon-sun"></use>
-          <use class="toggler__image-icon" xlink:href="img/sprite.svg#icon-luna"></use>
+          <use class="toggler__image-icon" data-toggler-icon xlink:href="img/sprite.svg#icon-sun"></use>
+          <use class="toggler__image-icon is-hidden" data-toggler-icon xlink:href="img/sprite.svg#icon-luna"></use>
         </svg>
       </button>
       <button class="main-header__toggler-menu toggler">
         <!-- При открытом меню: "Закрыть меню" -->
         <span class="visually-hidden">Открыть меню</span>
         <svg class="toggler__image" width="22" height="22">
-          <use class="toggler__image-icon is-hidden" xlink:href="img/sprite.svg#icon-open-menu"></use>
-          <use class="toggler__image-icon" xlink:href="img/sprite.svg#icon-close-menu"></use>
+          <use class="toggler__image-icon" xlink:href="img/sprite.svg#icon-open-menu"></use>
+          <use class="toggler__image-icon is-hidden" xlink:href="img/sprite.svg#icon-close-menu"></use>
         </svg>
       </button>
       <!-- При открытом is-opened -->
@@ -64,12 +64,12 @@
           <picture>
             <source type="image/webp" srcset="img/about-dark-preview@1x.webp 1x, ./img/about-dark-preview@2x.webp 2x">
             <!-- 1x: 360px, 2x: 720px -->
-            <img class="about__preview" src="img/about-dark-preview@1x.png" alt="Стоит молодой и красивый парень в черной одежде и смотрит в сторону" srcset="img/about-dark-preview@2x.png 2x" width="360" height="365">
+            <img class="about__preview" src="img/about-dark-preview@1x.png" alt="Стоит молодой и красивый парень в черной одежде и смотрит в сторону" srcset="img/about-dark-preview@2x.png 2x" width="360" height="365" data-about-preview>
           </picture>
           <picture>
             <source type="image/webp" srcset="img/about-light-preview@1x.webp 1x, ./img/about-light-preview@2x.webp 2x">
             <!-- 1x: 360px, 2x: 720px -->
-            <img class="about__preview is-hidden" src="img/about-light-preview@1x.png" alt="Стоит молодой и красивый парень в черной одежде и смотрит в сторону" srcset="img/about-light-preview@2x.png 2x" width="360" height="365">
+            <img class="about__preview is-hidden" src="img/about-light-preview@1x.png" alt="Стоит молодой и красивый парень в черной одежде и смотрит в сторону" srcset="img/about-light-preview@2x.png 2x" width="360" height="365" data-about-preview>
           </picture>
         <ul class="about__buttons-list">
           <li class="about__buttons-item">
@@ -213,8 +213,8 @@
             </picture>
             <p class="projects__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
             <ul class="projects__buttons">
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://github.com/nikitasech/cat-energy">
+              <li>
+                <a class="projects__button button button--icon" href="https://github.com/nikitasech/cat-energy" target="_blank">
                   <span class="visually-hidden">GitHub</span>
                   <svg class="button__icon" width="30" height="30">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
@@ -224,8 +224,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://nikitasech.github.io/cat-energy">
+              <li>
+                <a class="projects__button button button--icon" href="https://nikitasech.github.io/cat-energy" target="_blank">
                   <span class="visually-hidden">Перейти к проекту</span>
                   <svg class="button__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-open-url"></use>
@@ -243,8 +243,8 @@
             </picture>
             <p class="projects__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
             <ul class="projects__buttons">
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://github.com/nikitasech/pognali">
+              <li>
+                <a class="projects__button button button--icon" href="https://github.com/nikitasech/pognali" target="_blank">
                   <span class="visually-hidden">GitHub</span>
                   <svg class="button__icon" width="30" height="30">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
@@ -254,8 +254,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://nikitasech.github.io/pognali">
+              <li>
+                <a class="projects__button button button--icon" href="https://nikitasech.github.io/pognali" target="_blank">
                   <span class="visually-hidden">Перейти к проекту</span>
                   <svg class="button__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-open-url"></use>
@@ -273,8 +273,8 @@
             </picture>
             <p class="projects__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
             <ul class="projects__buttons">
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://github.com/nikitasech/trip-to-europe">
+              <li>
+                <a class="projects__button button button--icon" href="https://github.com/nikitasech/trip-to-europe" target="_blank">
                   <span class="visually-hidden">GitHub</span>
                   <svg class="button__icon" width="30" height="30">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
@@ -284,8 +284,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://nikitasech.github.io/trip-to-europe">
+              <li>
+                <a class="projects__button button button--icon" href="https://nikitasech.github.io/trip-to-europe" target="_blank">
                   <span class="visually-hidden">Перейти к проекту</span>
                   <svg class="button__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-open-url"></use>
@@ -303,8 +303,8 @@
             </picture>
             <p class="projects__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
             <ul class="projects__buttons">
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://github.com/nikitasech/smart-device">
+              <li>
+                <a class="projects__button button button--icon" href="https://github.com/nikitasech/smart-device" target="_blank">
                   <span class="visually-hidden">GitHub</span>
                   <svg class="button__icon" width="30" height="30">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
@@ -314,8 +314,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://nikitasech.github.io/smart-device">
+              <li>
+                <a class="projects__button button button--icon" href="https://nikitasech.github.io/smart-device" target="_blank">
                   <span class="visually-hidden">Перейти к проекту</span>
                   <svg class="button__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-open-url"></use>
@@ -333,8 +333,8 @@
             </picture>
             <p class="projects__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
             <ul class="projects__buttons">
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://github.com/nikitasech/sedona">
+              <li>
+                <a class="projects__button button button--icon" href="https://github.com/nikitasech/sedona" target="_blank">
                   <span class="visually-hidden">GitHub</span>
                   <svg class="button__icon" width="30" height="30">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
@@ -344,8 +344,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://nikitasech.github.io/sedona">
+              <li>
+                <a class="projects__button button button--icon" href="https://nikitasech.github.io/sedona" target="_blank">
                   <span class="visually-hidden">Перейти к проекту</span>
                   <svg class="button__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-open-url"></use>
@@ -363,8 +363,8 @@
             </picture>
             <p class="projects__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
             <ul class="projects__buttons">
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://github.com/nikitasech/gllacy">
+              <li>
+                <a class="projects__button button button--icon" href="https://github.com/nikitasech/gllacy" target="_blank">
                   <span class="visually-hidden">GitHub</span>
                   <svg class="button__icon" width="30" height="30">
                     <use xlink:href="img/sprite.svg#icon-github"></use>
@@ -374,8 +374,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="projects__button">
-                <a class="button button--icon button--color-black-russian" href="https://nikitasech.github.io/gllacy">
+              <li>
+                <a class="projects__button button button--icon" href="https://nikitasech.github.io/gllacy" target="_blank">
                   <span class="visually-hidden">Перейти к проекту</span>
                   <svg class="button__icon" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-open-url"></use>

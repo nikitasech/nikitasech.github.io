@@ -20,9 +20,9 @@
 }
 
 .toggler__image-icon {
-  display: none;
+  display: block;
 
   &.is-hidden {
-    display: block;
+    display: none;
   }
 }
