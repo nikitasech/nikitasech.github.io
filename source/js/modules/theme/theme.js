@@ -5,6 +5,7 @@ export class Theme {
     this.pageElement = pageElement;
     this.buttonElements = pageElement.querySelectorAll('[data-theme-toggler]');
     this.aboutPreviewElements = pageElement.querySelectorAll('[data-about-preview]');
+    this.themeMedia = window.matchMedia('(prefers-color-scheme: light)');
   }
 
   toggleAboutPreview() {
@@ -20,21 +21,31 @@ export class Theme {
   }
 
   toggle() {
+    this.toggleButtons();
+    this.toggleAboutPreview();
     this.pageElement.classList.toggle('is-light-theme');
   }
 
   buttonClickHundler() {
-    this.toggleButtons();
-    this.toggleAboutPreview();
     this.toggle();
   }
 
-  // var themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  // themeQuery.addEventListener('change', setColorScheme(getPreferredColorScheme()));
+  themeChangeHundler() {
+    this.toggle();
+  }
 
   addListeners() {
+    this.themeMedia.addEventListener('change', this.themeChangeHundler.bind(this));
     this.buttonElements.forEach((element) => {
       element.addEventListener('click', this.buttonClickHundler.bind(this, element));
     });
+  }
+
+  init() {
+    if (this.themeMedia.matches) {
+      this.toggle();
+    }
+
+    this.addListeners();
   }
 }
