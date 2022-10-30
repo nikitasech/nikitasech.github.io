@@ -5,4 +5,4 @@ export const initMainMenu = () => {
   const mainMenu = new MainMenu(mainMenuElement);
 
   mainMenu.init();
-}
+};
