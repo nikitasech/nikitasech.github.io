@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initTheme} from './modules/theme/init-theme';
+import {initMainMenu} from './modules/main-menu/init-main-menu';
 
 // ---------------------------------
 
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initTheme();
+    initMainMenu();
   });
 });
 
