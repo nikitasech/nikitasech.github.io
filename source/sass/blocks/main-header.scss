@@ -12,7 +12,18 @@
   padding-right: 10px;
   padding-left: 10px;
 
+  transition: background-color 0.5s ease-in-out;
+
+  @include vp-768 {
+    margin-left: -50px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
   @include vp-1280 {
+    margin-left: calc((100vw - 100%) / -2);
+    padding-right: calc((100vw - 1120px) / 2);
+    padding-left: calc((100vw - 1120px) / 2);
     margin-bottom: 40px;
   }
 
@@ -51,9 +62,16 @@
 }
 
 .main-header__nav {
-  display: none;
+  display: block;
   width: 100%;
+  // 114px = padding-top + .main-header__nav-list(margin-bottom)
+  margin-top: calc(-100% - 114px);
   padding-top: 54px;
+
+  opacity: 0;
+
+  transition: margin-top 0.5s ease-in-out,
+  opacity 0.5s ease-in-out;
 
   @include vp-1280 {
     margin-right: 30px;
@@ -62,18 +80,22 @@
   @include vp-768 {
     position: static;
 
-    display: block;
     order: 1;
     width: fit-content;
+    margin-top: 0;
     margin-right: 15px;
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
+
+    opacity: 1;
   }
 
   &.is-opened {
-    display: block;
+    margin-top: 0;
+
+    opacity: 1;
   }
 }
 
