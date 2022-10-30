@@ -12,7 +12,7 @@
   </head>
   <!-- Для светлой темы is-light-theme -->
   <body class="page container" data-page>
-    <header class="main-header">
+    <header class="main-header is-menu-opened" data-main-header>
       <div class="main-header__logo-wrapper">
         <a class="logo" href="#">
           <svg class="logo__image" width="38" height="21">
@@ -28,16 +28,16 @@
           <use class="toggler__image-icon is-hidden" data-toggler-icon xlink:href="img/sprite.svg#icon-luna"></use>
         </svg>
       </button>
-      <button class="main-header__toggler-menu toggler">
+      <button class="main-header__toggler-menu toggler" data-main-menu-toggler>
         <!-- При открытом меню: "Закрыть меню" -->
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden"data-toggler-text data-toggler-outher-text="Открыть меню">Закрыть меню</span>
         <svg class="toggler__image" width="22" height="22">
-          <use class="toggler__image-icon" xlink:href="img/sprite.svg#icon-open-menu"></use>
-          <use class="toggler__image-icon is-hidden" xlink:href="img/sprite.svg#icon-close-menu"></use>
+          <use class="toggler__image-icon is-hidden" data-toggler-icon xlink:href="img/sprite.svg#icon-open-menu"></use>
+          <use class="toggler__image-icon" data-toggler-icon xlink:href="img/sprite.svg#icon-close-menu"></use>
         </svg>
       </button>
       <!-- При открытом is-opened -->
-      <nav class="main-header__nav">
+      <nav class="main-header__nav is-opened" data-main-menu>
         <ul class="main-header__nav-list">
           <li class="main-header__nav-item">
             <a class="main-header__nav-link" href="#">Технологии</a>
