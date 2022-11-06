@@ -7,6 +7,18 @@
   background-color: $color-transparent;
   border: none;
   cursor: pointer;
+  transition: opacity 0.1s ease-in-out, transform 0.2s ease-in-out;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    transform: translateY(-10px);
+  }
 }
 
 .toggler__image {

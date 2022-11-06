@@ -20,7 +20,8 @@
   border-radius: 20px;
 
   transition: color 0.5s ease-in-out,
-  background-color 0.5s ease-in-out;
+  background-color 0.5s ease-in-out,
+  opacity 0.1s ease-in-out;
 
   @include vp-768 {
     padding-right: 67px;
@@ -29,6 +30,19 @@
     &--icon {
       padding-right: 15px;
       padding-left: 15px;
+    }
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  @media screen {
+    &:active {
+      opacity: 0.4;
     }
   }
 
