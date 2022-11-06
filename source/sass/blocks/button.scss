@@ -19,9 +19,7 @@
   background-color: $color-bright-grey;
   border-radius: 20px;
 
-  transition: color 0.5s ease-in-out,
-  background-color 0.5s ease-in-out,
-  opacity 0.1s ease-in-out;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, opacity 0.1s ease-in-out;
 
   @include vp-768 {
     padding-right: 67px;

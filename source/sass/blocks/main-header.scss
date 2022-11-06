@@ -102,8 +102,7 @@
   }
 
   &.is-animations {
-    transition: margin-top 0.5s ease-in-out,
-    opacity 0.5s ease-in-out;
+    transition: margin-top 0.5s ease-in-out, opacity 0.5s ease-in-out;
   }
 }
 
