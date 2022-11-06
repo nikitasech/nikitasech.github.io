@@ -32,6 +32,10 @@
   }
 }
 
+.is-light-theme .main-header.is-menu-opened {
+  background-color: $color-pattens-blue;
+}
+
 .main-header__logo-wrapper {
   z-index: 1;
 
@@ -173,4 +177,8 @@
 
     background-color: $color-alabaster;
   }
+}
+
+.is-light-theme .main-header__nav-link::after {
+  background-color: $color-bright-grey;
 }

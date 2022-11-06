@@ -141,6 +141,12 @@
   }
 }
 
+.is-light-theme .about__text {
+  @include vp-768 {
+    background-color: $color-pattens-blue;
+  }
+}
+
 .about__buttons-list {
   display: flex;
   margin-top: 0;
