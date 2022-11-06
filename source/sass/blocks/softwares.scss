@@ -42,11 +42,15 @@
   background-color: $color-bright-grey;
   border: none;
   border-radius: 20px;
+
+  transition: color 0.5s ease-in-out,
+  background-color 0.5s ease-in-out;
 }
 
 .is-light-theme .softwares__element {
-  background-color: $color-pattens-blue;
   color: $color-bright-grey;
+
+  background-color: $color-pattens-blue;
 }
 
 button.softwares__element {
@@ -57,7 +61,6 @@ button.softwares__element {
   flex-shrink: 0;
   width: 26px;
   margin-right: 5px;
-
 }
 
 .softwares__name {

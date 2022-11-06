@@ -8,6 +8,8 @@
   color: $color-vis-vis;
   text-transform: uppercase;
 
+  transition: color 0.5s ease-in-out;
+
   @include vp-768 {
     font-size: 37px;
   }
