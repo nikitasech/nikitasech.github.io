@@ -16,8 +16,10 @@
     }
   }
 
-  &:active {
-    transform: translateY(-10px);
+  @media screen {
+    &:active {
+      transform: translateY(-5px);
+    }
   }
 }
 
