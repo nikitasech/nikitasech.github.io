@@ -3,6 +3,8 @@
 
   background-color: $color-black-russian;
 
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, fill  0.5s ease-in-out;
+
   fill: $color-alabaster;
 
   &.is-light-theme {

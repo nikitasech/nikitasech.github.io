@@ -4,17 +4,19 @@
 }
 
 .main-footer__copy {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 
   font-weight: 700;
   font-size: 15px;
   line-height: 22px;
+  text-align: center;
 }
 
 .main-footer__link {
   color: $color-vis-vis;
+
+  transition: color 0.5s ease-in-out;
 }
 
 .is-light-theme .main-footer__link {

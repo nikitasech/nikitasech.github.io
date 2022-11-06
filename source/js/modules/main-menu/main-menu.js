@@ -25,6 +25,12 @@ export class MainMenu {
 
   init() {
     this.toggle();
+
+    setTimeout(() => {
+      this.headerElement.classList.add('is-animations');
+      this.menuElement.classList.add('is-animations');
+    });
+
     this.addListeners();
   }
 }
